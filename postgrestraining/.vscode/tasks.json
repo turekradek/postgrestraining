@@ -1,0 +1,205 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "PROD Start SSH Tunnel",
+            "type": "shell",
+            "command": "${workspaceFolder}/.vscode/PROD_start_ssh_tunnel.sh",
+            "isBackground": true,
+            "problemMatcher": {
+                "owner": "custom",
+                "pattern": [
+                    {
+                        "regexp": ".",
+                        "file": 1,
+                        "location": 2,
+                        "message": 3
+                    }
+                ],
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": ".",
+                    "endsPattern": "."
+                }
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "DEV Start SSH Tunnel",
+            "type": "shell",
+            "command": "${workspaceFolder}/.vscode/DEV_start_ssh_tunnel.sh",
+            "isBackground": true,
+            "problemMatcher": {
+                "owner": "custom",
+                "pattern": [
+                    {
+                        "regexp": ".",
+                        "file": 1,
+                        "location": 2,
+                        "message": 3
+                    }
+                ],
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": ".",
+                    "endsPattern": "."
+                }
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Start SSH Tunnel",
+            "type": "shell",
+            "command": "${workspaceFolder}/.vscode/start_ssh_tunnel.sh",
+            "isBackground": true,
+            "problemMatcher": {
+                "owner": "custom",
+                "pattern": [
+                    {
+                        "regexp": ".",
+                        "file": 1,
+                        "location": 2,
+                        "message": 3
+                    }
+                ],
+                "background": {
+                    "activeOnStart": true,
+                    "beginsPattern": ".",
+                    "endsPattern": "."
+                }
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Source .profile",
+            "type": "shell",
+            "command": "source ${workspaceFolder}/.vscode/.profile",
+            "problemMatcher": []
+        },
+        {
+            "label": "Poetry environment",
+            "type": "shell",
+            "command": "source ${workspaceFolder}/.venv/bin/activate"
+        },
+        // {
+        //     "label": "PROD read mediatools from report ",
+        //     "type": "shell",
+        //     "command": "sleep 2 && python ${workspaceFolder}/src/read_mediatools_from_reports/run.py",
+        //     "isBackground": true,
+        //     "problemMatcher": [],
+        //     // "dependsOn": "Start SSH Tunnel",
+        //     "options": {
+        //         "env": {
+        //             "DB_PASSWORD": "user_gdm_321",
+        //             "DB_USER": "gdm_user@az-postgres-ers-prod-01",
+        //             "IS_LOCAL": "True",
+        //             "AZURE_PROD_ADLS_KEY": "UOnxfybTgO7tpIJMPs41tSWZhsodM79qd16gTj7nNTsOT1qcmqjZAY6NtPpqgXL3s/QPoLVpbwDtzLCe2kkFAg==",
+        //             "AZURE_STORAGE_ACCOUNT": "adlseretailsearch001",
+        //         }
+        //     }
+        // },
+        // {
+        //     "label": "DEV read mediatools from report ",
+        //     "type": "shell",
+        //     "command": "env && sleep 5 && python ${workspaceFolder}/src/read_mediatools_from_reports/run.py",
+        //     "problemMatcher": [],
+        //     // "dependsOn": "Start SSH Tunnel",
+        //     "options": {
+        //         "env": {
+        //             "DB_PASSWORD": "ershub_DB_321!",
+        //             "DB_USER": "hosting@az-postgres-ers-nonprod-01",
+        //             "IS_LOCAL": "True",
+        //             "AZURE_PROD_ADLS_KEY": "9uih+aBILr52C+of033DKHyNlWkHqKrOULt0NG7e/vOO5WXT/fQBdrVbXo0fBggdbMsvabppM9r7PTyx3NbTrA==",
+        //             "AZURE_STORAGE_ACCOUNT": "adlseretailsearchdev",
+        //         }
+        //     }
+        },
+        {
+            "label": "DEV env for data base connection",
+            "type": "shell",
+            "command": "sleep 5",
+            "problemMatcher": [],
+            // "dependsOn": "Start SSH Tunnel",
+            "options": {
+                "env": {
+                    "DB_PASSWORD": "ershub_DB_321!",
+                    "DB_USER": "hosting@az-postgres-ers-nonprod-01",
+                    "IS_LOCAL": "True",
+                    "AZURE_PROD_ADLS_KEY": "9uih+aBILr52C+of033DKHyNlWkHqKrOULt0NG7e/vOO5WXT/fQBdrVbXo0fBggdbMsvabppM9r7PTyx3NbTrA==",
+                    "AZURE_STORAGE_ACCOUNT": "adlseretailsearchdev",
+                }
+            }
+        },
+        // {
+        //     "label": "PROD MEDIATOOLS EXTRACTS REPORT FROM VM",
+        //     "type": "shell",
+        //     "command": "echo 'PROD MEDIATOOLS EXTRACTS REPORT FROM VM' sleep 2 && python ${workspaceFolder}/src/mediatools_extract/main.py",
+        //     "problemMatcher": [],
+        //     // "dependsOn": "Start SSH Tunnel",
+        //     "options": {
+        //         "env": {
+        //             "DB_PASSWORD": "user_gdm_321",
+        //             "DB_USER": "gdm_user@az-postgres-ers-prod-01",
+        //             "IS_LOCAL": "True",
+        //             "AZURE_PROD_ADLS_KEY": "UOnxfybTgO7tpIJMPs41tSWZhsodM79qd16gTj7nNTsOT1qcmqjZAY6NtPpqgXL3s/QPoLVpbwDtzLCe2kkFAg==",
+        //             "AZURE_STORAGE_ACCOUNT": "adlseretailsearch001",
+        //         }
+        //     }
+        // },
+        // {
+        //     "label": "Run tc budget refresh",
+        //     "type": "shell",
+        //     "command": "env && sleep 5 && python ${workspaceFolder}/src/tc_budget_refresh/run.py",
+        //     "problemMatcher": [],
+        //     "dependsOn": "Start SSH Tunnel",
+        //     "options": {
+        //         "env": {
+        //             "PYTHONPATH": "${workspaceFolder}",
+        //             "DB_PASSWORD": "ershub_DB_321!",
+        //             "DB_USER": "hosting@az-postgres-ers-prod-01",
+        //             "IS_LOCAL": "True",
+        //             "AZURE_PROD_ADLS_KEY": "9uih+aBILr52C+of033DKHyNlWkHqKrOULt0NG7e/vOO5WXT/fQBdrVbXo0fBggdbMsvabppM9r7PTyx3NbTrA==",
+        //             "AZURE_STORAGE_ACCOUNT": "adlseretailsearchdev",
+        //             "XBYTE_API_KEY": "9c6c9e273ca5",
+        //             "SHOPEE_XBYTE_KEY": "123"
+        //         }
+        //     },
+        //     "presentation": {
+        //         "reveal": "always",
+        //         "panel": "shared"
+        //     }
+        // },
+        // {
+        //     "label": "Run asda scraper",
+        //     "type": "shell",
+        //     "command": "source ~/parser/bin/activate && export PYTHONPATH=$(pwd) && sleep 5 && env && sleep 5 && python ${workspaceFolder}/xbyte_parsing/asda_scraper.py",
+        //     "problemMatcher": [],
+        //     "dependsOn": "Start SSH Tunnel",
+        //     "options": {
+        //         "env": {
+        //             "PYTHONPATH": "${workspaceFolder}",
+        //             "DB_PASSWORD": "ershub_DB_321!",
+        //             "DB_USER": "hosting@az-postgres-ers-prod-01",
+        //             "IS_LOCAL": "True",
+        //             "AZURE_PROD_ADLS_KEY": "9uih+aBILr52C+of033DKHyNlWkHqKrOULt0NG7e/vOO5WXT/fQBdrVbXo0fBggdbMsvabppM9r7PTyx3NbTrA==",
+        //             "AZURE_STORAGE_ACCOUNT": "adlseretailsearchdev",
+        //             "XBYTE_API_KEY": "9c6c9e273ca5",
+        //             "SHOPEE_XBYTE_KEY": "123"
+        //         }
+        //     },
+        //     "presentation": {
+        //         "reveal": "always",
+        //         "panel": "shared"
+        //     }
+        // }
+    ]
+}

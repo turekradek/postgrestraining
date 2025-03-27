@@ -1,0 +1,44 @@
+{
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",  // Use Black as the default formatter for Python files
+        "editor.formatOnSave": true,  // Automatically format Python files on save
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": "explicit"  // Organize imports explicitly on save
+        },
+        "editor.rulers": [
+            // 72,  // Uncomment to set a ruler at 72 characters
+            // 88,  // Uncomment to set a ruler at 88 characters
+            119  // Set a ruler at 119 characters to help keep lines within the desired length
+        ]
+    },
+    "editor.formatOnSave": true,  // Automatically format files on save
+    "files.insertFinalNewline": true,  // Ensure a newline at the end of the file
+    "files.trimFinalNewlines": true,  // Trim final newlines
+    "files.trimTrailingWhitespace": true,  // Trim trailing whitespace
+    "black-formatter.args": [
+        "--line-length",  // Argument to set the maximum line length for Black
+        "119"  // Set the maximum line length to 119 characters
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#1a1a1a",
+        "activityBar.background": "#1a1a1a",
+        "sash.hoverBorder": "#1a1a1a",
+        "statusBar.background": "#000000",
+        "statusBarItem.hoverBackground": "#1a1a1a",
+        "statusBarItem.remoteBackground": "#000000",
+        "titleBar.activeBackground": "#000000",
+        "titleBar.inactiveBackground": "#00000099"
+    },
+    "peacock.remoteColor": "#000000",  // Set the remote color for Peacock extension
+    "python.poetryPath": "source  ${workspaceFolder}/.venv/bin/python",  // Set the path for the Poetry virtual environment
+    "files.associations": {
+        "*.parquet": "sql"
+    },
+    // "parquet-vizualizeer.sqlSyntaxHighlighting": true,
+    "parquet-visualizer.backend": "duckdb",  // Backend for reading the parquet file
+    "parquet-visualizer.defaultPageSizes": ["20", "50", "100", "500", "all"],  // Set the default page size for data and query tab
+    "parquet-visualizer.defaultQuery": "SELECT *\r\nFROM data\r\nLIMIT 1000;",  // Default SQL query for parquet file
+    "parquet-visualizer.RunQueryKeyBinding": "Ctrl-Enter",  // Default Key Binding for running queries
+    "parquet-visualizer.dateTimeFormat": "ISO8601",  // Set datetime format for columns of timestamp type
+    "parquet-visualizer.outputDateTimeFormatInUTC": true  // Outputs the datetime format for timestamp columns in UTC
+}

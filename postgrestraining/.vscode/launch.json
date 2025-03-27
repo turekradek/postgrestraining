@@ -1,0 +1,257 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "PROD deepscraping check",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/.vscode/zz_deepscraping_test/run.py",
+            "console": "integratedTerminal",
+            // "preLaunchTask": "PROD Start SSH Tunnel",
+            "env": {
+                // "DB_PASSWORD": "Ers?Admin!2024",
+                // "DB_USER": "ers_devops_admin",
+                // "DB_PASSWORD": "user_gdm_321",
+                // "DB_USER": "gdm_user",//"",
+                "DB_PASSWORD": "eRS_DB!723host",
+                "DB_USER": "hosting",//"",
+                // "DB_PASSWORD": "ershub_DB_321!",
+                // "DB_USER": "hosting",//"",    // DEV USER hosting
+                "IS_LOCAL": "True",
+                // "AZURE_PROD_ADLS_KEY": "9uih+aBILr52C+of033DKHyNlWkHqKrOULt0NG7e/vOO5WXT/fQBdrVbXo0fBggdbMsvabppM9r7PTyx3NbTrA==",
+                // "AZURE_STORAGE_ACCOUNT": "adlseretailsearchdev",
+                "AZURE_PROD_ADLS_KEY": "UOnxfybTgO7tpIJMPs41tSWZhsodM79qd16gTj7nNTsOT1qcmqjZAY6NtPpqgXL3s/QPoLVpbwDtzLCe2kkFAg==",
+                "AZURE_STORAGE_ACCOUNT": "adlseretailsearch001",
+                // "XBYTE_AMAZON_PRODUCT_API_KEY": "87x3e28hmf00k1s1y4",
+                // "WALMART_API_AUTH_TOKEN": "a5b42dd7-ed0e-49f8-818b-01491ed38d5a",
+                // "WALMART_API_PRIVATE_KEY" : "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDf2I2c+uy27LK3igLtuPebJKP9utV8pf+m2CGJVgr/+RRUolB2DXeACrG+nBykz8Brrc1XYh5+iMd8qJ1nFI+Sx+z+wLrgY8+gWaSnj8UKH2kSjIepWLqtvThO2qKcSIUVxNzVridvpBlVWcZrgjT31XVHzlAdEBFRrK98b3Z6Y8yOck+kM4lKaWXFj6BGo2KbExgFRnlL/NgmCIORGFmdH9bKwb505WfOxn5wl0j6ZGgMfbifOaqQ5Udf/K8FgUl67HAsM/nViFDp9a5yaeon1sRbBCDH/28ewU7dysOhJ5YkiVn70rKElaY20xfm/t5MFG9qsfK3c6PNByVETRmnAgMBAAECggEBAMxZkKZvuGwiV+EQgC3vPzQF1iQLTVwW2vXAt5T91Nrr07CT4Wp0TtS4bp25PLkE5AApUZ1leLtBOQRHljKFZbC1DVlgLvoshF45mARUTqg4Fp8VZb+mvf1gEaiDFhIgbkZ6SrRT4bKcl3gAlhCNdLePyhp8cUym33i1chriUsHU5rIZzulkJ87WwrEpbDFatec0Hat9xeChqgrPeKl9Yb2y6pi3DfrUbddMvaI5XgXuRV7fHFYhA0VV3O8XKZ3JUqsYW4JW9u1px0pT2Zashy3V8LdLHVVW5VV6D6VMw+1KZ42ilJlZ39jnlqRK1/bywheFCFFlaOG7SIml+LQ5F/kCgYEA9XGgACLR0In//Kbkyfr8X+LzsLCnEgh1S70XVuCsO6z31+Bt2PVva/4Z3J09+FUMd4RRugxWaDbG+PuoQ6SfurOij1L25NVbUdLvX24WYl4h94tTstTem1vZpsc9TKfSGgo4vxbQQ3FYUnf3douOBcvMCuXN+8RURs367Vabf40CgYEA6Xkhq6mkKKGKp7UAF4X/1ZuJF5DR8H5jHqEiWXjNHQw6HqhS0LLnZFpojSvybcIKY2FW0P6L8oLh7RHEyssBc05vslNpMRGCvM9XHGz5Ud9pk0bWzc2GTUINyg5yWT+byGluMT/xHLmiUZoy57cka7kC6t+e4Zj6oeLgt9KkxwMCgYEAoUt2ViCLuXu22hXjLEjgKTM/6dFtOZCNZKRy/gjPprfYd+loxrcj7dgirrQ20Ucy1igCfT02W24D/AOFZE5/GXaLUZy321HKnU79N71kwGgT8lWBP3hcgcQumEc+pW1zyOEGwa0AWBHYdPmZijHTt0NiZ5b1copmx9D9IZNUxNECgYEAsYHCIsS4pZekVrublUbw6tP1GDCoHUPKUohKGGJq+DHKonJxfHD40miWYvbNu7sysLpaCk3t0vTFlrvStihAMw2oiJk4OfFJSAoP/fGwYRoOJ8ZNHG2tNWIKH9x5/fcJlwbpm5I03BUbHxWwrFGm5Cvm1vIr1vO7YoefOMNzOkcCgYB9z9SDONIjJ3RRrZ+QIWfi36DuzaGxpqsYOsKbX77Zpt5R2GDtrInyD7kR5s8aclrqsosQcSY5HtdeTBITLDSorc1YAr6635jG0hVsPfEOZGxYLFP3fg4FFpJWFKBLPNSo13v9CAgDlFQR+InpQhYIXd6snQGvMb2uxOWwfsAoQw==",
+                // "WALMART_API_PRODUCTION" : "FALSE",
+            }
+        },
+        {
+            "name": "PROD Daily Aggregation",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/webscraping_aggregation/run.py",
+            "console": "integratedTerminal",
+            // "preLaunchTask": "PROD Start SSH Tunnel",
+            "env": {
+                "DB_PASSWORD": "eRS_DB!723host",
+                "DB_USER": "hosting",//"",
+                "IS_LOCAL": "True",
+                "AZURE_PROD_ADLS_KEY": "UOnxfybTgO7tpIJMPs41tSWZhsodM79qd16gTj7nNTsOT1qcmqjZAY6NtPpqgXL3s/QPoLVpbwDtzLCe2kkFAg==",
+                "AZURE_STORAGE_ACCOUNT": "adlseretailsearch001"
+            }
+        },
+        {
+            "name": "DEV read mediatools from report ",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/read_mediatools_from_reports/run.py", // walmart_lifetime/walmart_lifetime_metrics_lifetime_reports/run.py, // amazon_product_scraping_es_1h/test_imports.py", // run.py",
+            "console": "integratedTerminal",
+            "preLaunchTask": "DEV Start SSH Tunnel",
+            "env": {
+                "DB_PASSWORD": "ershub_DB_321!",
+                "DB_USER": "hosting@az-postgres-ers-nonprod-01",
+                // "DB_PASSWORD": "user_gdm_321",
+                // "DB_USER": "gdm_user@az-postgres-ers-prod-01",
+                "IS_LOCAL": "True",
+                "AZURE_PROD_ADLS_KEY": "9uih+aBILr52C+of033DKHyNlWkHqKrOULt0NG7e/vOO5WXT/fQBdrVbXo0fBggdbMsvabppM9r7PTyx3NbTrA==",
+                "AZURE_STORAGE_ACCOUNT": "adlseretailsearchdev",
+                // "AZURE_PROD_ADLS_KEY": "UOnxfybTgO7tpIJMPs41tSWZhsodM79qd16gTj7nNTsOT1qcmqjZAY6NtPpqgXL3s/QPoLVpbwDtzLCe2kkFAg==",
+                // "AZURE_STORAGE_ACCOUNT": "adlseretailsearch001",
+                // "XBYTE_AMAZON_PRODUCT_API_KEY": "87x3e28hmf00k1s1y4",
+                // "WALMART_API_AUTH_TOKEN": "a5b42dd7-ed0e-49f8-818b-01491ed38d5a",
+                // "WALMART_API_PRIVATE_KEY" : "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDf2I2c+uy27LK3igLtuPebJKP9utV8pf+m2CGJVgr/+RRUolB2DXeACrG+nBykz8Brrc1XYh5+iMd8qJ1nFI+Sx+z+wLrgY8+gWaSnj8UKH2kSjIepWLqtvThO2qKcSIUVxNzVridvpBlVWcZrgjT31XVHzlAdEBFRrK98b3Z6Y8yOck+kM4lKaWXFj6BGo2KbExgFRnlL/NgmCIORGFmdH9bKwb505WfOxn5wl0j6ZGgMfbifOaqQ5Udf/K8FgUl67HAsM/nViFDp9a5yaeon1sRbBCDH/28ewU7dysOhJ5YkiVn70rKElaY20xfm/t5MFG9qsfK3c6PNByVETRmnAgMBAAECggEBAMxZkKZvuGwiV+EQgC3vPzQF1iQLTVwW2vXAt5T91Nrr07CT4Wp0TtS4bp25PLkE5AApUZ1leLtBOQRHljKFZbC1DVlgLvoshF45mARUTqg4Fp8VZb+mvf1gEaiDFhIgbkZ6SrRT4bKcl3gAlhCNdLePyhp8cUym33i1chriUsHU5rIZzulkJ87WwrEpbDFatec0Hat9xeChqgrPeKl9Yb2y6pi3DfrUbddMvaI5XgXuRV7fHFYhA0VV3O8XKZ3JUqsYW4JW9u1px0pT2Zashy3V8LdLHVVW5VV6D6VMw+1KZ42ilJlZ39jnlqRK1/bywheFCFFlaOG7SIml+LQ5F/kCgYEA9XGgACLR0In//Kbkyfr8X+LzsLCnEgh1S70XVuCsO6z31+Bt2PVva/4Z3J09+FUMd4RRugxWaDbG+PuoQ6SfurOij1L25NVbUdLvX24WYl4h94tTstTem1vZpsc9TKfSGgo4vxbQQ3FYUnf3douOBcvMCuXN+8RURs367Vabf40CgYEA6Xkhq6mkKKGKp7UAF4X/1ZuJF5DR8H5jHqEiWXjNHQw6HqhS0LLnZFpojSvybcIKY2FW0P6L8oLh7RHEyssBc05vslNpMRGCvM9XHGz5Ud9pk0bWzc2GTUINyg5yWT+byGluMT/xHLmiUZoy57cka7kC6t+e4Zj6oeLgt9KkxwMCgYEAoUt2ViCLuXu22hXjLEjgKTM/6dFtOZCNZKRy/gjPprfYd+loxrcj7dgirrQ20Ucy1igCfT02W24D/AOFZE5/GXaLUZy321HKnU79N71kwGgT8lWBP3hcgcQumEc+pW1zyOEGwa0AWBHYdPmZijHTt0NiZ5b1copmx9D9IZNUxNECgYEAsYHCIsS4pZekVrublUbw6tP1GDCoHUPKUohKGGJq+DHKonJxfHD40miWYvbNu7sysLpaCk3t0vTFlrvStihAMw2oiJk4OfFJSAoP/fGwYRoOJ8ZNHG2tNWIKH9x5/fcJlwbpm5I03BUbHxWwrFGm5Cvm1vIr1vO7YoefOMNzOkcCgYB9z9SDONIjJ3RRrZ+QIWfi36DuzaGxpqsYOsKbX77Zpt5R2GDtrInyD7kR5s8aclrqsosQcSY5HtdeTBITLDSorc1YAr6635jG0hVsPfEOZGxYLFP3fg4FFpJWFKBLPNSo13v9CAgDlFQR+InpQhYIXd6snQGvMb2uxOWwfsAoQw==",
+                // "WALMART_API_PRODUCTION" : "FALSE",
+            }
+        },
+        {
+            "name": "PROD read mediatools from report ",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/read_mediatools_from_reports/run.py", // walmart_lifetime/walmart_lifetime_metrics_lifetime_reports/run.py, // amazon_product_scraping_es_1h/test_imports.py", // run.py",
+            "console": "integratedTerminal",
+            "preLaunchTask": "PROD Start SSH Tunnel",
+            "env": {
+                // "DB_PASSWORD": "ershub_DB_321!",
+                // "DB_USER": "hosting@az-postgres-ers-nonprod-01",
+                "DB_PASSWORD": "user_gdm_321",
+                "DB_USER": "gdm_user",//"",
+                "IS_LOCAL": "True",
+                // "AZURE_PROD_ADLS_KEY": "9uih+aBILr52C+of033DKHyNlWkHqKrOULt0NG7e/vOO5WXT/fQBdrVbXo0fBggdbMsvabppM9r7PTyx3NbTrA==",
+                // "AZURE_STORAGE_ACCOUNT": "adlseretailsearchdev",
+                "AZURE_PROD_ADLS_KEY": "UOnxfybTgO7tpIJMPs41tSWZhsodM79qd16gTj7nNTsOT1qcmqjZAY6NtPpqgXL3s/QPoLVpbwDtzLCe2kkFAg==",
+                "AZURE_STORAGE_ACCOUNT": "adlseretailsearch001",
+                // "XBYTE_AMAZON_PRODUCT_API_KEY": "87x3e28hmf00k1s1y4",
+                // "WALMART_API_AUTH_TOKEN": "a5b42dd7-ed0e-49f8-818b-01491ed38d5a",
+                // "WALMART_API_PRIVATE_KEY" : "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDf2I2c+uy27LK3igLtuPebJKP9utV8pf+m2CGJVgr/+RRUolB2DXeACrG+nBykz8Brrc1XYh5+iMd8qJ1nFI+Sx+z+wLrgY8+gWaSnj8UKH2kSjIepWLqtvThO2qKcSIUVxNzVridvpBlVWcZrgjT31XVHzlAdEBFRrK98b3Z6Y8yOck+kM4lKaWXFj6BGo2KbExgFRnlL/NgmCIORGFmdH9bKwb505WfOxn5wl0j6ZGgMfbifOaqQ5Udf/K8FgUl67HAsM/nViFDp9a5yaeon1sRbBCDH/28ewU7dysOhJ5YkiVn70rKElaY20xfm/t5MFG9qsfK3c6PNByVETRmnAgMBAAECggEBAMxZkKZvuGwiV+EQgC3vPzQF1iQLTVwW2vXAt5T91Nrr07CT4Wp0TtS4bp25PLkE5AApUZ1leLtBOQRHljKFZbC1DVlgLvoshF45mARUTqg4Fp8VZb+mvf1gEaiDFhIgbkZ6SrRT4bKcl3gAlhCNdLePyhp8cUym33i1chriUsHU5rIZzulkJ87WwrEpbDFatec0Hat9xeChqgrPeKl9Yb2y6pi3DfrUbddMvaI5XgXuRV7fHFYhA0VV3O8XKZ3JUqsYW4JW9u1px0pT2Zashy3V8LdLHVVW5VV6D6VMw+1KZ42ilJlZ39jnlqRK1/bywheFCFFlaOG7SIml+LQ5F/kCgYEA9XGgACLR0In//Kbkyfr8X+LzsLCnEgh1S70XVuCsO6z31+Bt2PVva/4Z3J09+FUMd4RRugxWaDbG+PuoQ6SfurOij1L25NVbUdLvX24WYl4h94tTstTem1vZpsc9TKfSGgo4vxbQQ3FYUnf3douOBcvMCuXN+8RURs367Vabf40CgYEA6Xkhq6mkKKGKp7UAF4X/1ZuJF5DR8H5jHqEiWXjNHQw6HqhS0LLnZFpojSvybcIKY2FW0P6L8oLh7RHEyssBc05vslNpMRGCvM9XHGz5Ud9pk0bWzc2GTUINyg5yWT+byGluMT/xHLmiUZoy57cka7kC6t+e4Zj6oeLgt9KkxwMCgYEAoUt2ViCLuXu22hXjLEjgKTM/6dFtOZCNZKRy/gjPprfYd+loxrcj7dgirrQ20Ucy1igCfT02W24D/AOFZE5/GXaLUZy321HKnU79N71kwGgT8lWBP3hcgcQumEc+pW1zyOEGwa0AWBHYdPmZijHTt0NiZ5b1copmx9D9IZNUxNECgYEAsYHCIsS4pZekVrublUbw6tP1GDCoHUPKUohKGGJq+DHKonJxfHD40miWYvbNu7sysLpaCk3t0vTFlrvStihAMw2oiJk4OfFJSAoP/fGwYRoOJ8ZNHG2tNWIKH9x5/fcJlwbpm5I03BUbHxWwrFGm5Cvm1vIr1vO7YoefOMNzOkcCgYB9z9SDONIjJ3RRrZ+QIWfi36DuzaGxpqsYOsKbX77Zpt5R2GDtrInyD7kR5s8aclrqsosQcSY5HtdeTBITLDSorc1YAr6635jG0hVsPfEOZGxYLFP3fg4FFpJWFKBLPNSo13v9CAgDlFQR+InpQhYIXd6snQGvMb2uxOWwfsAoQw==",
+                // "WALMART_API_PRODUCTION" : "FALSE",
+            }
+        },
+        {
+            "name": "PROD MEDIATOOLS EXTRACTS REPORT FROM VM",
+            "type": "python", //"debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/mediatools_extract/mediatools_main/run.py", // walmart_lifetime/walmart_lifetime_metrics_lifetime_reports/run.py, // amazon_product_scraping_es_1h/test_imports.py", // run.py",
+            "sudo" : true,
+            "console": "integratedTerminal",
+            "env": {
+                // "DB_PASSWORD": "ershub_DB_321!",
+                // "DB_USER": "hosting@az-postgres-ers-nonprod-01",
+                "DB_PASSWORD": "user_gdm_321",
+                "DB_USER": "gdm_user@az-postgres-ers-prod-01",
+                "IS_LOCAL": "True",
+                // "AZURE_PROD_ADLS_KEY": "9uih+aBILr52C+of033DKHyNlWkHqKrOULt0NG7e/vOO5WXT/fQBdrVbXo0fBggdbMsvabppM9r7PTyx3NbTrA==",
+                // "AZURE_STORAGE_ACCOUNT": "adlseretailsearchdev",
+                "AZURE_PROD_ADLS_KEY": "UOnxfybTgO7tpIJMPs41tSWZhsodM79qd16gTj7nNTsOT1qcmqjZAY6NtPpqgXL3s/QPoLVpbwDtzLCe2kkFAg==",
+                "AZURE_STORAGE_ACCOUNT": "adlseretailsearch001",
+                // "XBYTE_AMAZON_PRODUCT_API_KEY": "87x3e28hmf00k1s1y4",
+                // "WALMART_API_AUTH_TOKEN": "a5b42dd7-ed0e-49f8-818b-01491ed38d5a",
+                // "WALMART_API_PRIVATE_KEY" : "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDf2I2c+uy27LK3igLtuPebJKP9utV8pf+m2CGJVgr/+RRUolB2DXeACrG+nBykz8Brrc1XYh5+iMd8qJ1nFI+Sx+z+wLrgY8+gWaSnj8UKH2kSjIepWLqtvThO2qKcSIUVxNzVridvpBlVWcZrgjT31XVHzlAdEBFRrK98b3Z6Y8yOck+kM4lKaWXFj6BGo2KbExgFRnlL/NgmCIORGFmdH9bKwb505WfOxn5wl0j6ZGgMfbifOaqQ5Udf/K8FgUl67HAsM/nViFDp9a5yaeon1sRbBCDH/28ewU7dysOhJ5YkiVn70rKElaY20xfm/t5MFG9qsfK3c6PNByVETRmnAgMBAAECggEBAMxZkKZvuGwiV+EQgC3vPzQF1iQLTVwW2vXAt5T91Nrr07CT4Wp0TtS4bp25PLkE5AApUZ1leLtBOQRHljKFZbC1DVlgLvoshF45mARUTqg4Fp8VZb+mvf1gEaiDFhIgbkZ6SrRT4bKcl3gAlhCNdLePyhp8cUym33i1chriUsHU5rIZzulkJ87WwrEpbDFatec0Hat9xeChqgrPeKl9Yb2y6pi3DfrUbddMvaI5XgXuRV7fHFYhA0VV3O8XKZ3JUqsYW4JW9u1px0pT2Zashy3V8LdLHVVW5VV6D6VMw+1KZ42ilJlZ39jnlqRK1/bywheFCFFlaOG7SIml+LQ5F/kCgYEA9XGgACLR0In//Kbkyfr8X+LzsLCnEgh1S70XVuCsO6z31+Bt2PVva/4Z3J09+FUMd4RRugxWaDbG+PuoQ6SfurOij1L25NVbUdLvX24WYl4h94tTstTem1vZpsc9TKfSGgo4vxbQQ3FYUnf3douOBcvMCuXN+8RURs367Vabf40CgYEA6Xkhq6mkKKGKp7UAF4X/1ZuJF5DR8H5jHqEiWXjNHQw6HqhS0LLnZFpojSvybcIKY2FW0P6L8oLh7RHEyssBc05vslNpMRGCvM9XHGz5Ud9pk0bWzc2GTUINyg5yWT+byGluMT/xHLmiUZoy57cka7kC6t+e4Zj6oeLgt9KkxwMCgYEAoUt2ViCLuXu22hXjLEjgKTM/6dFtOZCNZKRy/gjPprfYd+loxrcj7dgirrQ20Ucy1igCfT02W24D/AOFZE5/GXaLUZy321HKnU79N71kwGgT8lWBP3hcgcQumEc+pW1zyOEGwa0AWBHYdPmZijHTt0NiZ5b1copmx9D9IZNUxNECgYEAsYHCIsS4pZekVrublUbw6tP1GDCoHUPKUohKGGJq+DHKonJxfHD40miWYvbNu7sysLpaCk3t0vTFlrvStihAMw2oiJk4OfFJSAoP/fGwYRoOJ8ZNHG2tNWIKH9x5/fcJlwbpm5I03BUbHxWwrFGm5Cvm1vIr1vO7YoefOMNzOkcCgYB9z9SDONIjJ3RRrZ+QIWfi36DuzaGxpqsYOsKbX77Zpt5R2GDtrInyD7kR5s8aclrqsosQcSY5HtdeTBITLDSorc1YAr6635jG0hVsPfEOZGxYLFP3fg4FFpJWFKBLPNSo13v9CAgDlFQR+InpQhYIXd6snQGvMb2uxOWwfsAoQw==",
+                // "WALMART_API_PRODUCTION" : "FALSE",
+            }
+        },
+        // {
+        //     "name": "DEV walmart lifetime metrics reports ",
+        //     "type": "debugpy",
+        //     "request": "launch",
+        //     "program": "${workspaceFolder}/src/walmart_lifetime/walmart_lifetime_metrics_lifetime_reports/run.py", // amazon_product_scraping_es_1h/test_imports.py", // run.py",
+        //     "console": "integratedTerminal",
+        //     "env": {
+        //         "DB_PASSWORD": "ershub_DB_321!",
+        //         "DB_USER": "hosting@az-postgres-ers-nonprod-01",
+        //         // "DB_PASSWORD": "user_gdm_321",
+        //         // "DB_USER": "gdm_user@az-postgres-ers-prod-01",
+        //         "IS_LOCAL": "True",
+        //         "AZURE_PROD_ADLS_KEY": "9uih+aBILr52C+of033DKHyNlWkHqKrOULt0NG7e/vOO5WXT/fQBdrVbXo0fBggdbMsvabppM9r7PTyx3NbTrA==",
+        //         "AZURE_STORAGE_ACCOUNT": "adlseretailsearchdev",
+        //         // "AZURE_PROD_ADLS_KEY": "UOnxfybTgO7tpIJMPs41tSWZhsodM79qd16gTj7nNTsOT1qcmqjZAY6NtPpqgXL3s/QPoLVpbwDtzLCe2kkFAg==",
+        //         // "AZURE_STORAGE_ACCOUNT": "adlseretailsearch001",
+        //         "XBYTE_AMAZON_PRODUCT_API_KEY": "87x3e28hmf00k1s1y4",
+        //         "WALMART_API_AUTH_TOKEN": "a5b42dd7-ed0e-49f8-818b-01491ed38d5a",
+        //         "WALMART_API_PRIVATE_KEY" : "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDf2I2c+uy27LK3igLtuPebJKP9utV8pf+m2CGJVgr/+RRUolB2DXeACrG+nBykz8Brrc1XYh5+iMd8qJ1nFI+Sx+z+wLrgY8+gWaSnj8UKH2kSjIepWLqtvThO2qKcSIUVxNzVridvpBlVWcZrgjT31XVHzlAdEBFRrK98b3Z6Y8yOck+kM4lKaWXFj6BGo2KbExgFRnlL/NgmCIORGFmdH9bKwb505WfOxn5wl0j6ZGgMfbifOaqQ5Udf/K8FgUl67HAsM/nViFDp9a5yaeon1sRbBCDH/28ewU7dysOhJ5YkiVn70rKElaY20xfm/t5MFG9qsfK3c6PNByVETRmnAgMBAAECggEBAMxZkKZvuGwiV+EQgC3vPzQF1iQLTVwW2vXAt5T91Nrr07CT4Wp0TtS4bp25PLkE5AApUZ1leLtBOQRHljKFZbC1DVlgLvoshF45mARUTqg4Fp8VZb+mvf1gEaiDFhIgbkZ6SrRT4bKcl3gAlhCNdLePyhp8cUym33i1chriUsHU5rIZzulkJ87WwrEpbDFatec0Hat9xeChqgrPeKl9Yb2y6pi3DfrUbddMvaI5XgXuRV7fHFYhA0VV3O8XKZ3JUqsYW4JW9u1px0pT2Zashy3V8LdLHVVW5VV6D6VMw+1KZ42ilJlZ39jnlqRK1/bywheFCFFlaOG7SIml+LQ5F/kCgYEA9XGgACLR0In//Kbkyfr8X+LzsLCnEgh1S70XVuCsO6z31+Bt2PVva/4Z3J09+FUMd4RRugxWaDbG+PuoQ6SfurOij1L25NVbUdLvX24WYl4h94tTstTem1vZpsc9TKfSGgo4vxbQQ3FYUnf3douOBcvMCuXN+8RURs367Vabf40CgYEA6Xkhq6mkKKGKp7UAF4X/1ZuJF5DR8H5jHqEiWXjNHQw6HqhS0LLnZFpojSvybcIKY2FW0P6L8oLh7RHEyssBc05vslNpMRGCvM9XHGz5Ud9pk0bWzc2GTUINyg5yWT+byGluMT/xHLmiUZoy57cka7kC6t+e4Zj6oeLgt9KkxwMCgYEAoUt2ViCLuXu22hXjLEjgKTM/6dFtOZCNZKRy/gjPprfYd+loxrcj7dgirrQ20Ucy1igCfT02W24D/AOFZE5/GXaLUZy321HKnU79N71kwGgT8lWBP3hcgcQumEc+pW1zyOEGwa0AWBHYdPmZijHTt0NiZ5b1copmx9D9IZNUxNECgYEAsYHCIsS4pZekVrublUbw6tP1GDCoHUPKUohKGGJq+DHKonJxfHD40miWYvbNu7sysLpaCk3t0vTFlrvStihAMw2oiJk4OfFJSAoP/fGwYRoOJ8ZNHG2tNWIKH9x5/fcJlwbpm5I03BUbHxWwrFGm5Cvm1vIr1vO7YoefOMNzOkcCgYB9z9SDONIjJ3RRrZ+QIWfi36DuzaGxpqsYOsKbX77Zpt5R2GDtrInyD7kR5s8aclrqsosQcSY5HtdeTBITLDSorc1YAr6635jG0hVsPfEOZGxYLFP3fg4FFpJWFKBLPNSo13v9CAgDlFQR+InpQhYIXd6snQGvMb2uxOWwfsAoQw==",
+        //         "WALMART_API_PRODUCTION" : "FALSE",
+        //     }
+        // },
+        // {
+        //     "name": "DEV product catalog CRITEO RMP",
+        //     "type": "debugpy",
+        //     "request": "launch",
+        //     "program": "${workspaceFolder}/src/product_catalog/product_catalog_criteo_rmp/run.py", // amazon_product_scraping_es_1h/test_imports.py", // run.py",
+        //     "console": "integratedTerminal",
+        //     // "preLaunchTask": "Start SSH Tunnel",
+        //     "env": {
+        //         "DB_PASSWORD": "ershub_DB_321!",
+        //         "DB_USER": "hosting@az-postgres-ers-nonprod-01",
+        //         // "DB_PASSWORD": "user_gdm_321",
+        //         // "DB_USER": "gdm_user@az-postgres-ers-prod-01",
+        //         "IS_LOCAL": "True",
+        //         "AZURE_PROD_ADLS_KEY": "9uih+aBILr52C+of033DKHyNlWkHqKrOULt0NG7e/vOO5WXT/fQBdrVbXo0fBggdbMsvabppM9r7PTyx3NbTrA==",
+        //         "AZURE_STORAGE_ACCOUNT": "adlseretailsearchdev",
+        //         // "AZURE_PROD_ADLS_KEY": "UOnxfybTgO7tpIJMPs41tSWZhsodM79qd16gTj7nNTsOT1qcmqjZAY6NtPpqgXL3s/QPoLVpbwDtzLCe2kkFAg==",
+        //         // "AZURE_STORAGE_ACCOUNT": "adlseretailsearch001",
+        //         // "XBYTE_AMAZON_PRODUCT_API_KEY": "87x3e28hmf00k1s1y4",
+        //         // "WALMART_API_AUTH_TOKEN": "a5b42dd7-ed0e-49f8-818b-01491ed38d5a",
+        //         // "WALMART_API_PRIVATE_KEY" : "MIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDf2I2c+uy27LK3igLtuPebJKP9utV8pf+m2CGJVgr/+RRUolB2DXeACrG+nBykz8Brrc1XYh5+iMd8qJ1nFI+Sx+z+wLrgY8+gWaSnj8UKH2kSjIepWLqtvThO2qKcSIUVxNzVridvpBlVWcZrgjT31XVHzlAdEBFRrK98b3Z6Y8yOck+kM4lKaWXFj6BGo2KbExgFRnlL/NgmCIORGFmdH9bKwb505WfOxn5wl0j6ZGgMfbifOaqQ5Udf/K8FgUl67HAsM/nViFDp9a5yaeon1sRbBCDH/28ewU7dysOhJ5YkiVn70rKElaY20xfm/t5MFG9qsfK3c6PNByVETRmnAgMBAAECggEBAMxZkKZvuGwiV+EQgC3vPzQF1iQLTVwW2vXAt5T91Nrr07CT4Wp0TtS4bp25PLkE5AApUZ1leLtBOQRHljKFZbC1DVlgLvoshF45mARUTqg4Fp8VZb+mvf1gEaiDFhIgbkZ6SrRT4bKcl3gAlhCNdLePyhp8cUym33i1chriUsHU5rIZzulkJ87WwrEpbDFatec0Hat9xeChqgrPeKl9Yb2y6pi3DfrUbddMvaI5XgXuRV7fHFYhA0VV3O8XKZ3JUqsYW4JW9u1px0pT2Zashy3V8LdLHVVW5VV6D6VMw+1KZ42ilJlZ39jnlqRK1/bywheFCFFlaOG7SIml+LQ5F/kCgYEA9XGgACLR0In//Kbkyfr8X+LzsLCnEgh1S70XVuCsO6z31+Bt2PVva/4Z3J09+FUMd4RRugxWaDbG+PuoQ6SfurOij1L25NVbUdLvX24WYl4h94tTstTem1vZpsc9TKfSGgo4vxbQQ3FYUnf3douOBcvMCuXN+8RURs367Vabf40CgYEA6Xkhq6mkKKGKp7UAF4X/1ZuJF5DR8H5jHqEiWXjNHQw6HqhS0LLnZFpojSvybcIKY2FW0P6L8oLh7RHEyssBc05vslNpMRGCvM9XHGz5Ud9pk0bWzc2GTUINyg5yWT+byGluMT/xHLmiUZoy57cka7kC6t+e4Zj6oeLgt9KkxwMCgYEAoUt2ViCLuXu22hXjLEjgKTM/6dFtOZCNZKRy/gjPprfYd+loxrcj7dgirrQ20Ucy1igCfT02W24D/AOFZE5/GXaLUZy321HKnU79N71kwGgT8lWBP3hcgcQumEc+pW1zyOEGwa0AWBHYdPmZijHTt0NiZ5b1copmx9D9IZNUxNECgYEAsYHCIsS4pZekVrublUbw6tP1GDCoHUPKUohKGGJq+DHKonJxfHD40miWYvbNu7sysLpaCk3t0vTFlrvStihAMw2oiJk4OfFJSAoP/fGwYRoOJ8ZNHG2tNWIKH9x5/fcJlwbpm5I03BUbHxWwrFGm5Cvm1vIr1vO7YoefOMNzOkcCgYB9z9SDONIjJ3RRrZ+QIWfi36DuzaGxpqsYOsKbX77Zpt5R2GDtrInyD7kR5s8aclrqsosQcSY5HtdeTBITLDSorc1YAr6635jG0hVsPfEOZGxYLFP3fg4FFpJWFKBLPNSo13v9CAgDlFQR+InpQhYIXd6snQGvMb2uxOWwfsAoQw==",
+        //         // "WALMART_API_PRODUCTION" : "FALSE",
+        //         "CRI_CLIENT_ID":"a3d1f0dcf28440e1889f807e42d93dd7",
+        //         "CRI_CLIENT_SECRET":"Lo10JX3CyPPUBQxwhctHkATL8h9axP1Hn33z3o4ec8Hl",
+        //     }
+        // },
+        // {
+        //     "name": "DEV webscraping_mview_refresh ",
+        //     "type": "debugpy",
+        //     "request": "launch",
+        //     "program": "${workspaceFolder}/src/webscraping_mview_refresh/run.py", // walmart_lifetime/walmart_lifetime_metrics_lifetime_reports/run.py, // amazon_product_scraping_es_1h/test_imports.py", // run.py",
+        //     "console": "integratedTerminal",
+        //     "preLaunchTask": "Start SSH Tunnel",
+        //     "env": {
+        //         "DB_PASSWORD": "ershub_DB_321!",
+        //         "DB_USER": "hosting@az-postgres-ers-nonprod-01",
+        //         // "DB_PASSWORD": "user_gdm_321",
+        //         // "DB_USER": "gdm_user@az-postgres-ers-prod-01",
+        //         "IS_LOCAL": "True",
+        //         "AZURE_PROD_ADLS_KEY": "9uih+aBILr52C+of033DKHyNlWkHqKrOULt0NG7e/vOO5WXT/fQBdrVbXo0fBggdbMsvabppM9r7PTyx3NbTrA==",
+        //         "AZURE_STORAGE_ACCOUNT": "adlseretailsearchdev",
+        //         // "AZURE_PROD_ADLS_KEY": "UOnxfybTgO7tpIJMPs41tSWZhsodM79qd16gTj7nNTsOT1qcmqjZAY6NtPpqgXL3s/QPoLVpbwDtzLCe2kkFAg==",
+        //         // "AZURE_STORAGE_ACCOUNT": "adlseretailsearch001",
+        //     }
+        // },
+
+        // {
+        //     "name": "DEV tc budget refresh",
+        //     "type": "debugpy",
+        //     "request": "launch",
+        //     "program": "${workspaceFolder}/src/tc_budget_refresh/run.py",
+        //     "console": "integratedTerminal",
+        //     "env": {
+        //         "DB_PASSWORD": "ershub_DB_321!",
+        //         "DB_USER": "hosting@az-postgres-ers-nonprod-01",
+        //         "IS_LOCAL": "True",
+        //         "AZURE_PROD_ADLS_KEY": "9uih+aBILr52C+of033DKHyNlWkHqKrOULt0NG7e/vOO5WXT/fQBdrVbXo0fBggdbMsvabppM9r7PTyx3NbTrA==",
+        //         "AZURE_STORAGE_ACCOUNT": "adlseretailsearchdev"
+        //     }
+        // },
+        // {
+        //     "name": "DEV Hourly Aggregation",
+        //     "type": "debugpy",
+        //     "request": "launch",
+        //     "program": "${workspaceFolder}/src/sov_hourly_aggregation/run.py",
+        //     "console": "integratedTerminal",
+        //     "env": {
+        //         "DB_PASSWORD": "ershub_DB_321!",
+        //         "DB_USER": "hosting@az-postgres-ers-nonprod-01",
+        //         "IS_LOCAL": "True",
+        //         "AZURE_PROD_ADLS_KEY": "UOnxfybTgO7tpIJMPs41tSWZhsodM79qd16gTj7nNTsOT1qcmqjZAY6NtPpqgXL3s/QPoLVpbwDtzLCe2kkFAg==",
+        //         "AZURE_STORAGE_ACCOUNT": "adlseretailsearch001"
+        //     }
+        // },
+        // {
+        //     "name": "PROD Hourly Aggregation",
+        //     "type": "debugpy",
+        //     "request": "launch",
+        //     "program": "${workspaceFolder}/src/sov_hourly_aggregation/run.py",
+        //     "console": "integratedTerminal",
+        //     "env": {
+        //         "DB_PASSWORD": "user_gdm_321",
+        //         "DB_USER": "gdm_user@az-postgres-ers-prod-01",
+        //         "IS_LOCAL": "True",
+        //         "AZURE_PROD_ADLS_KEY": "UOnxfybTgO7tpIJMPs41tSWZhsodM79qd16gTj7nNTsOT1qcmqjZAY6NtPpqgXL3s/QPoLVpbwDtzLCe2kkFAg==",
+        //         "AZURE_STORAGE_ACCOUNT": "adlseretailsearch001"
+        //     }
+        // },
+
+        // {
+        //     "name": "PROD Daily Aggregation",
+        //     "type": "debugpy",
+        //     "request": "launch",
+        //     "program": "${workspaceFolder}/src/sos_daily_aggregation/run.py",
+        //     "console": "integratedTerminal",
+        //     "env": {
+        //         "DB_PASSWORD": "user_gdm_321",
+        //         "DB_USER": "gdm_user@az-postgres-ers-prod-01",
+        //         "IS_LOCAL": "True",
+        //         "AZURE_PROD_ADLS_KEY": "UOnxfybTgO7tpIJMPs41tSWZhsodM79qd16gTj7nNTsOT1qcmqjZAY6NtPpqgXL3s/QPoLVpbwDtzLCe2kkFAg==",
+        //         "AZURE_STORAGE_ACCOUNT": "adlseretailsearch001"
+        //     }
+        // },
+        // {
+        //     "name": "DEV Files Post-Processing",
+        //     "type": "debugpy",
+        //     "request": "launch",
+        //     "program": "${workspaceFolder}/src/sov_hourly_files_postprocessing/run.py",
+        //     "console": "integratedTerminal",
+        //     "env": {
+        //         "DB_PASSWORD": "ershub_DB_321!",
+        //         "DB_USER": "hosting@az-postgres-ers-nonprod-01",
+        //         "IS_LOCAL": "True",
+        //         "AZURE_PROD_ADLS_KEY": "UOnxfybTgO7tpIJMPs41tSWZhsodM79qd16gTj7nNTsOT1qcmqjZAY6NtPpqgXL3s/QPoLVpbwDtzLCe2kkFAg==",
+        //         "AZURE_STORAGE_ACCOUNT": "adlseretailsearch001"
+        //     }
+        // }
+    ]
+}
