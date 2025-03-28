@@ -3,10 +3,10 @@ from datetime import datetime
 import sqlalchemy
 import pandas as pd
 
-# import webscraping_mview_refresh.webscraping_utils.utils.configuration as config
+
 import zz_deepscraping_test.deepscraping_utils.utils.configuration as config
 
-from ers.db import DBConnection
+from db_connection.db import DBConnection
 
 DATE_STR_FORMAT = '%Y-%m-%d'
 TIME_STR_FORMAT = '%Y-%m-%d %H:%M:%S'
