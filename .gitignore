@@ -1,7 +1,14 @@
 # VSCODE 
-postgrestraining/.vscode
-# LIST WORFLOWS IN DEV 
-
-# venv
-postgrestraining/.venv
-postgrestraining/venv
+postgrestraining/.vscode/
+.vscode/
+# TESTS
+tests/
+postgrestraining/tests/
+# PYTHON
+venv/
+venv
+postgrestraining/venv/
+*.pyc
+__pycache__/
+postgrestraining/ven/
+ven
